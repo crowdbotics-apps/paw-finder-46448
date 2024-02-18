@@ -1,29 +1,18 @@
-import React from "react"
-import {
-  View,
-  Image,
-  Text,
-  ScrollView,
-  SafeAreaView,
-  StyleSheet
-} from "react-native"
+import React from "react";
+import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 
 const WelcomeScreen = () => {
-  return (
-    <SafeAreaView style={styles.container}>
+  return <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
         <View style={styles.group}>
           <Image style={styles.logo} source={require("./logo.png")} />
-          <Text style={styles.text}>
-            Let's build something amazing together!
-          </Text>
-        </View>
+          <Text style={styles.text}>{"\nPAW FINDER\nWhere you go your pet goes too          "}</Text>
+        <View style={styles.VtJujJwd}><Text style={styles.tPLpulTZ}>{"Log In"}</Text></View></View>
         <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
       </ScrollView>
-    </SafeAreaView>
-  )
-}
+    </SafeAreaView>;
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -48,7 +37,7 @@ const styles = StyleSheet.create({
   },
   text: {
     textAlign: "center",
-    fontSize: 28,
+    fontSize: 20,
     color: "#828AB0",
     fontWeight: 700
   },
@@ -58,7 +47,20 @@ const styles = StyleSheet.create({
     color: "#828AB0",
     fontWeight: 700,
     marginBottom: 20
+  },
+  VtJujJwd: {
+    height: 60,
+    width: 140,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 0,
+    color: "#777777"
+  },
+  tPLpulTZ: {
+    width: 100,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 29,
+    borderRadius: 0
   }
-})
-
-export default WelcomeScreen
+});
+export default WelcomeScreen;
